@@ -1,3 +1,3 @@
 all:
-	gcc main.cpp -lstdc++ -o main.out
+	gcc main.cpp calc.cpp initcalc.cpp outcalc.cpp -lstdc++ -o main.out
 

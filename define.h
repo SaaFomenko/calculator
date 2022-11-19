@@ -16,8 +16,21 @@ class Calc
 
 struct lable
 {
-  const char* num1 = { "num1: " };
-	const char* num2 = { "num2: " };
+  static const char* num1;
+	static const char* num2;
+	static const char* add;
+	static const char* multiply;
+	static const char* subtract_1_2;
+	static const char* subtract_2_1;
+	static const char* divide_1_2;
+	static const char* divide_2_1;
 };
 
-void calcInit(Calc* calc, const char* num);
+enum nvar
+{
+	num1,
+	num2
+};
+
+void initCalc(Calc* calc, nvar num_id);
+void outCalc(Calc* calc);

@@ -3,14 +3,13 @@
 
 
 int main() {
-	lable num;
 	Calc calc;
 
 	while(true)
 	{
-		calcInit(&calc, num.num1);
-		calcInit(&calc, num.num2);
-
+		initCalc(&calc, nvar::num1);
+		initCalc(&calc, nvar::num2);
+		outCalc(&calc);
 	}
  
   return 0;
