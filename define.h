@@ -32,5 +32,5 @@ enum nvar
 	num2
 };
 
-void initCalc(Calc* calc, nvar num_id);
-void outCalc(Calc* calc);
+void initCalc(Calc& calc, nvar num_id);
+void outCalc(Calc& calc);

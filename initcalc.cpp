@@ -4,7 +4,7 @@
 const char* lable::num1 = { "num1: " };
 const char* lable::num2 = { "num2: " };
 
-void initCalc(Calc* calc, nvar num_id)
+void initCalc(Calc& calc, nvar num_id)
 {
 	std::string in_user = "";
 	double num = 0;
@@ -24,11 +24,11 @@ void initCalc(Calc* calc, nvar num_id)
 
 			if (nvar::num1 == num_id)
 			{
-				check = calc->set_num1(num);
+				check = calc.set_num1(num);
 			} 
 			else
 			{
-				check = calc->set_num2(num);
+				check = calc.set_num2(num);
 			}
 		}
 		catch (std::invalid_argument e)

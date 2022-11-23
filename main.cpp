@@ -7,9 +7,9 @@ int main() {
 
 	while(true)
 	{
-		initCalc(&calc, nvar::num1);
-		initCalc(&calc, nvar::num2);
-		outCalc(&calc);
+		initCalc(calc, nvar::num1);
+		initCalc(calc, nvar::num2);
+		outCalc(calc);
 	}
  
   return 0;
